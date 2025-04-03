@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>八舟会（はっしゅうかい） - 三味線と日本舞踊の教室</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <style>
+    body {
+      font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+      background: #faf8f5 url('https://www.transparenttextures.com/patterns/japanese-pattern.png');
+      background-repeat: repeat;
+      margin: 0;
+      color: #333;
+    }
+    header, footer {
+      background: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: #8c4c34;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('images/hero.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 5rem 1rem;
+      text-align: center;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+    .section {
+      background: #fff;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 960px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #8c4c34;
+      border-bottom: 1px solid #d8b9a3;
+      padding-bottom: 0.5rem;
+    }
+    .teacher-photos {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .teacher-photos img {
+      max-width: 30%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .gallery-slider img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    iframe.map {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    form button {
+      background-color: #8c4c34;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      .teacher-photos img {
+        max-width: 100%;
+      }
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 1rem;">
+      <img src="images/logo.png" alt="八舟会ロゴ" style="height: 60px;">
+      <h1>八舟会（はっしゅうかい）</h1>
+    </div>
+    <nav>
+      <a href="#about">教室について</a>
+      <a href="#teacher">講師紹介</a>
+      <a href="#lessons">レッスン案内</a>
+      <a href="#gallery">ギャラリー</a>
+      <a href="#voices">生徒の声</a>
+      <a href="#access">アクセス</a>
+      <a href="#contact">お問い合わせ</a>
+      <a href="#news">お知らせ</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>音に舞に、心がほどけるひととき。</h2>
+  </section>
+
+  <section id="about" class="section">
+  <h2>教室について</h2>
+  <p><strong>八舟会（はっしゅうかい）</strong>は、三味線と日本舞踊の伝統を大切にしながら、現代にも通じる表現を大切にする教室です。坂東流日本舞踊と藤本流民謡三味線の技を、丁寧に楽しくお伝えしています。</p>
+  <p>和の文化に触れながら、美しい所作や音を学びたい方、初めての方も大歓迎です。</p>
+</section>
+
+  <section id="teacher" class="section">
+    <h2>講師紹介</h2>
+    <div class="teacher-photos">
+      <img src="images/teachers/teacher1.jpg" alt="講師の写真1">
+      <img src="images/teachers/teacher2.jpg" alt="講師の写真2">
+      <img src="images/teachers/teacher3.jpg" alt="講師の写真3">
+    </div>
+    <p>講師：三井田 初枝（みいだ はつえ）</p>
+    <p>坂東流大師範「坂東 舟」として70年以上の日本舞踊歴を持ち、古典から新舞踊まで幅広い演目を舞台で披露してきました。坂東流は優雅で品格ある所作が特徴で、女性らしい柔らかな動きや流れるような振付が魅力の流派です。</p>
+    <p>また、三味線においては藤本流師範「藤本 富音八」として40年以上のキャリアを誇り、民謡三味線の力強い響きを活かした指導を行っています。藤本流は正確な撥さばきと豊かな表現力に定評があり、日本各地の唄を通して三味線の深さを味わえる流派です。</p>
+  </section>
+
+  <section id="lessons" class="section">
+    <h2>レッスン案内</h2>
+    <ul>
+      <li><strong>初心者クラス：</strong> 楽譜が読めなくても大丈夫。一から丁寧にご指導します。</li>
+      <li><strong>子どもクラス：</strong> 遊び感覚で楽しく学べるレッスン。礼儀も自然と身につきます。</li>
+      <li><strong>個人レッスン：</strong> 自分のペースでじっくり習いたい方に。スケジュール調整も柔軟です。</li>
+    </ul>
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>ギャラリー</h2>
+    <div class="gallery-slider">
+      <div><img src="images/gallery/lesson1.jpg" alt="レッスン1"></div>
+      <div><img src="images/gallery/dance1.jpg" alt="発表会"></div>
+      <div><img src="images/gallery/performance1.jpg" alt="公演1"></div>
+      <div><img src="images/gallery/performance2.jpg" alt="公演2"></div>
+      <div><img src="images/gallery/performance3.jpg" alt="公演3"></div>
+    </div>
+  </section>
+
+  <section id="voices" class="section">
+    <h2>生徒の声</h2>
+    <blockquote>「ずっと憧れていた三味線を始めて、毎週のレッスンが楽しみになりました！」（40代・女性）</blockquote>
+    <blockquote>「子どもが日本舞踊に夢中で、姿勢も良くなってきました」（30代・母）</blockquote>
+  </section>
+
+  <section id="access" class="section">
+    <h2>アクセス</h2>
+    <p>〒419-0107 静岡県田方郡函南町肥田927-10</p>
+    <p>最寄駅：伊豆箱根鉄道 大場駅 徒歩15分</p>
+    <p>駐車場：近隣にコインパーキングあり</p>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.552930773282!2d138.9225411152312!3d35.080705180332456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019a3603dd66a3d%3A0x6e65fda14a45a37c!2z44CSNDE5LTAxMDcg5pel5pys55yM5bed5bGx5YyX5a6u5Y2X6KW_5bGx5biC5b2p5bed77yS77yV77yU!5e0!3m2!1sja!2sjp!4v1712123456789" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>お問い合わせ</h2>
+    <form>
+      <label>お名前<br><input type="text" name="name"></label><br>
+      <label>メールアドレス<br><input type="email" name="email"></label><br>
+      <label>お問い合わせ内容<br><textarea name="message" rows="5"></textarea></label><br>
+      <button type="submit">送信</button>
+    </form>
+  </section>
+
+  <section id="news" class="section">
+    <h2>お知らせ</h2>
+    <ul>
+      <li><strong>2025年4月:</strong> 春の発表会を開催しました。ご参加ありがとうございました。</li>
+      <li><strong>2025年3月:</strong> 初心者向け日本舞踊クラスを新設しました。体験受付中！</li>
+    </ul>
+  </section>
+
+  <footer>
+    <small>© 2025 八舟会（はっしゅうかい）</small>
+  </footer>
+
+  <script>
+    $(document).ready(function () {
+      $('.gallery-slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        adaptiveHeight: true
+      });
+    });
+  </script>
+</body>
+</html>
